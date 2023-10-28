@@ -1,0 +1,36 @@
+<div class="body">
+  <div class="container">
+    <input type="checkbox" id="flip">
+    <div class="cover">
+      <div class="front">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJdayXyR48lgkZ80xZ-y7LU3QPe9nH8poQGD2mA7sVcOdhUwPYe7qzrecuPBvloB-nWrE&usqp=CAU"
+          alt="">
+        <div class="text">
+          <span class="text-1">Health is not valued <br> till sickness comes </span>
+        </div>
+      </div>
+      <div class="back">
+        <!--<img class="backImg" src="images/backImg.jpg" alt="">-->
+        <div class="text">
+        </div>
+      </div>
+    </div>
+    <div class="forms">
+      <div class="form-content">
+        <div class="login-form">
+          <div class="title">Login</div>
+          <form action="#">
+            <div class="input-boxes">
+              <div class="input-box">
+                <input type="text" name="mac" placeholder="Enter your Mac" [(ngModel)]="loginObj.mac" ngModel
+                  name="email" #mac="ngModel" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$">
+              </div>
+              <button class="btng" (click)="onLogin(loginObj.mac)">Login</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
